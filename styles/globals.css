@@ -1,0 +1,63 @@
+/* Add this to your styles.css or use a CSS-in-JS solution */
+.animated-text {
+  font-family: "Josefin Sans", sans-serif; /* Using a clean, modern sans-serif font */
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, #00C853, #FFD600, #00B0FF); /* Green for growth, Gold for success, Blue for trust */
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite;
+  font-size: 33px;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* Adjust duration and easing as needed */
+}
+
+.carousel-slide {
+  min-width: 267px; /* Adjust this based on your actual slide width */
+  /* Your slide styles */
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border: 3px solid black; /* Add border styling */
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-border {
+  border: 1px solid #d3d3d3; /* Light grey border */
+  border-radius: 5px;
+  background-color: #f8f9fa; /* Slightly darker than white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+  padding-top:21px;
+  line-height: 33px;
+  margin-bottom: 33px;
+}
